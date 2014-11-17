@@ -24,6 +24,27 @@
 			remoteGlobalIDString = 7C8000481A19F8B300ACDB66;
 			remoteInfo = ChatDemo;
 		};
+		7C8000741A19F91B00ACDB66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C8000701A19F91B00ACDB66 /* chat.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = chat;
+		};
+		7C80007A1A19F92200ACDB66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C8000761A19F92200ACDB66 /* TCPClientDemo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = TCPClientDemo;
+		};
+		7C8000801A19F92600ACDB66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C80007C1A19F92600ACDB66 /* TCPServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FB20486AB0100D96B5E;
+			remoteInfo = TCPServer;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +59,9 @@
 		7C8000601A19F8B300ACDB66 /* ChatDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8000651A19F8B300ACDB66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C8000661A19F8B300ACDB66 /* ChatDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDemoTests.swift; sourceTree = "<group>"; };
+		7C8000701A19F91B00ACDB66 /* chat.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = chat.xcodeproj; path = chat/chat.xcodeproj; sourceTree = SOURCE_ROOT; };
+		7C8000761A19F92200ACDB66 /* TCPClientDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TCPClientDemo.xcodeproj; path = SocketDemo/TCPClientDemo/TCPClientDemo.xcodeproj; sourceTree = SOURCE_ROOT; };
+		7C80007C1A19F92600ACDB66 /* TCPServer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TCPServer.xcodeproj; path = SocketDemo/TCPServer/TCPServer.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +103,8 @@
 		7C80004B1A19F8B300ACDB66 /* ChatDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7C8000821A19F92C00ACDB66 /* TCP chat */,
+				7C8000831A19F93400ACDB66 /* Chat */,
 				7C80004E1A19F8B300ACDB66 /* AppDelegate.swift */,
 				7C8000501A19F8B300ACDB66 /* FirstViewController.swift */,
 				7C8000521A19F8B300ACDB66 /* SecondViewController.swift */,
@@ -113,6 +139,47 @@
 				7C8000651A19F8B300ACDB66 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C8000711A19F91B00ACDB66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C8000751A19F91B00ACDB66 /* chat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C8000771A19F92200ACDB66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C80007B1A19F92200ACDB66 /* TCPClientDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C80007D1A19F92600ACDB66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C8000811A19F92600ACDB66 /* TCPServer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C8000821A19F92C00ACDB66 /* TCP chat */ = {
+			isa = PBXGroup;
+			children = (
+				7C80007C1A19F92600ACDB66 /* TCPServer.xcodeproj */,
+				7C8000761A19F92200ACDB66 /* TCPClientDemo.xcodeproj */,
+			);
+			name = "TCP chat";
+			sourceTree = "<group>";
+		};
+		7C8000831A19F93400ACDB66 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				7C8000701A19F91B00ACDB66 /* chat.xcodeproj */,
+			);
+			name = Chat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +249,20 @@
 			mainGroup = 7C8000401A19F8B300ACDB66;
 			productRefGroup = 7C80004A1A19F8B300ACDB66 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7C8000711A19F91B00ACDB66 /* Products */;
+					ProjectRef = 7C8000701A19F91B00ACDB66 /* chat.xcodeproj */;
+				},
+				{
+					ProductGroup = 7C8000771A19F92200ACDB66 /* Products */;
+					ProjectRef = 7C8000761A19F92200ACDB66 /* TCPClientDemo.xcodeproj */;
+				},
+				{
+					ProductGroup = 7C80007D1A19F92600ACDB66 /* Products */;
+					ProjectRef = 7C80007C1A19F92600ACDB66 /* TCPServer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7C8000481A19F8B300ACDB66 /* ChatDemo */,
@@ -189,6 +270,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7C8000751A19F91B00ACDB66 /* chat.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = chat.app;
+			remoteRef = 7C8000741A19F91B00ACDB66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C80007B1A19F92200ACDB66 /* TCPClientDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TCPClientDemo.app;
+			remoteRef = 7C80007A1A19F92200ACDB66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C8000811A19F92600ACDB66 /* TCPServer */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = TCPServer;
+			remoteRef = 7C8000801A19F92600ACDB66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7C8000471A19F8B300ACDB66 /* Resources */ = {
